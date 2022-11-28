@@ -2063,7 +2063,7 @@ body.offcanvas .oliven-nav-toggle {
     }
 }
 
-.background-music {
+/* .background-music {
     position: fixed;
     z-index: 999;
     bottom: 10px;
@@ -2110,7 +2110,7 @@ body.offcanvas .oliven-nav-toggle {
 .background-music-bottom-left .background-music-embed {
     left: auto;
     right: 0
-}
+} */
   
 
 /* ==== Media Query ==== */
