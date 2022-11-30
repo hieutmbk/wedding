@@ -143,7 +143,6 @@
             }
         }
     });
-
     // Gift Registry owlCarousel
     $('.gift .owl-carousel').owlCarousel({
         loop: true
@@ -235,17 +234,6 @@
         , preload: [0, 1]
     }
 });
-
-$(".qr-zoom").magnificPopup({
-    type: "image"
-    , closeOnContentClick: !0
-    , mainClass: "mfp-fade"
-    , gallery: {
-        enabled: !0
-        , navigateByImgClick: !0
-        , preload: [0, 1]
-    }
-});
     
      // RSVP FORM 
     var form = $('.contact__form'),
@@ -278,8 +266,6 @@ $(".qr-zoom").magnificPopup({
         .fail(fail_func);
     });
     
-    
-    
 }());
 
 // Countdown wedding
@@ -288,7 +274,7 @@ $(".qr-zoom").magnificPopup({
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-  let birthday = "Jan 1, 2023 00:00:00",
+  let birthday = "Jan 1, 2023 10:00:00",
       countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
         let now = new Date().getTime(),
