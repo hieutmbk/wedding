@@ -201,6 +201,25 @@
     }
   });
     // Gallery 
+
+    var imagesWedding = "";
+    for (var i = 3; i <= 36; i++) {
+        
+        imagesWedding += '<div class="col-md-4 gallery-item ceremony">\n' +
+            '                            <a href="images/gallery/'+i+'.jpg" class="img-zoom">\n' +
+            '                                <div class="gallery-box">\n' +
+            '                                    <div class="gallery-img"> <img src="images/gallery/'+i+'.jpg" class="img-fluid mx-auto d-block" alt=""> </div>\n' +
+            '                                    <div class="gallery-detail">\n' +
+            '                                        <h4 class="mb-0">Lê Thảo & Minh Hiếu</h4>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                            </a>\n' +
+            '                        </div>'
+
+           
+    }
+    $("#images-gallery").html(imagesWedding);
+
     $(window).on("load", function () {
     var e = $(".gallery-filter")
         , a = $("#gallery-filter");
@@ -235,6 +254,17 @@
     }
 });
     
+$(".qr-zoom").magnificPopup({
+    type: "image"
+    , closeOnContentClick: !0
+    , mainClass: "mfp-fade"
+    , gallery: {
+        enabled: !0
+        , navigateByImgClick: !0
+        , preload: [0, 1]
+    }
+});
+
      // RSVP FORM 
     var form = $('.contact__form'),
         message = $('.contact__msg'),
