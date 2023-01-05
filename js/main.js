@@ -308,7 +308,7 @@ $(".qr-zoom").magnificPopup({
       countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
         let now = new Date().getTime(),
-            distance = countDown - now;
+            distance = now - countDown;
 
         document.getElementById("days").innerText = Math.floor(distance / (day)),
           document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
